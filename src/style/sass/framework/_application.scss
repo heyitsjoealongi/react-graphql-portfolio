@@ -1,0 +1,70 @@
+//// Application
+// Framework Colors
+$primary: hsl(220, 13%, 18%);
+$secondary: hsl(193, 95%, 68%);
+$alternate: hsl(220, 8%, 28%);
+$light: hsl(0, 0%, 100%);
+$dark: hsl(220, 13%, 18%);
+
+// Framework Soft Colors
+$primary-soft: hsl(220, 13%, 18%, 0.08);
+$secondary-soft: hsl(193, 95%, 68%, 0.08);
+$alternate-soft: hsl(220, 8%, 28%, 0.08);
+$light-soft: hsl(0, 0%, 100%, 0.08);
+$dark-soft: hsl(220, 13%, 18%, 0.08);
+
+// Framework Medium Colors
+$primary-medium: hsl(220, 13%, 18%, 0.2);
+$secondary-medium: hsl(193, 95%, 68%, 0.2);
+$alternate-medium: hsl(220, 8%, 28%, 0.2);
+$light-medium: hsl(0, 0%, 100%, 0.2);
+$dark-medium: hsl(220, 13%, 18%, 0.2);
+
+// Framework Shadow Colors
+$primary-shadow: hsl(220, 13%, 18%, 0.4);
+$secondary-shadow: hsl(193, 95%, 68%, 0.4);
+$alternate-shadow: hsl(220, 8%, 28%, 0.4);
+$light-shadow: hsl(0, 0%, 100%, 0.4);
+$dark-shadow: hsl(220, 13%, 18%, 0.4);
+
+// Framework Solid Shadow
+$primary-shadow-solid: hsl(220, 13%, 18%, 0.4) 0px 16px 24px -8px,
+  hsl(220, 13%, 18%, 0.04) 0px 16px 16px -8px;
+$secondary-shadow-solid: hsl(193, 95%, 68%, 0.4) 0px 16px 24px -8px,
+  hsl(193, 95%, 68%, 0.04) 0px 16px 16px -8px;
+$alternate-shadow-solid: hsl(220, 8%, 28%, 0.4) 0px 16px 24px -8px,
+  hsl(220, 8%, 28%, 0.04) 0px 16px 16px -8px;
+$light-shadow-solid: hsl(0, 0%, 100%, 0.4) 0px 16px 24px -8px,
+  hsl(0, 0%, 100%, 0.04) 0px 16px 16px -8px;
+$dark-shadow-solid: hsl(220, 13%, 18%, 0.4) 0px 16px 24px -8px,
+  hsl(220, 13%, 18%, 0.04) 0px 16px 16px -8px;
+
+// Framework Gradient Shadow
+$primary-shadow-gradient: hsl(220, 13%, 18%, 0.08) 0px 48px 96px -8px,
+  hsl(220, 13%, 18%, 0.4) 0px 32px 64px -32px;
+$primary-shadow-gradient-active: hsl(220, 13%, 18%, 0.08) 0px 24px 48px -4px,
+  hsl(220, 13%, 18%, 0.4) 0px 16px 32px -16px;
+$secondary-shadow-gradient: hsl(193, 95%, 68%, 0.08) 0px 48px 96px -8px,
+  hsl(220, 13%, 18%, 0.4) 0px 32px 64px -32px;
+$secondary-shadow-gradient-active: hsl(193, 95%, 68%, 0.08) 0px 24px 48px -4px,
+  hsl(220, 13%, 18%, 0.4) 0px 16px 32px -16px;
+$light-shadow-gradient: hsl(0, 0%, 100%, 0.08) 0px 48px 96px -8px,
+  hsl(220, 13%, 18%, 0.4) 0px 32px 64px -32px;
+$light-shadow-gradient-active: hsl(0, 0%, 100%, 0.08) 0px 24px 48px -4px,
+  hsl(220, 13%, 18%, 0.4) 0px 16px 32px -16px;
+$dark-shadow-gradient: hsl(220, 13%, 18%, 0.08) 0px 48px 96px -8px,
+  hsl(220, 13%, 18%, 0.4) 0px 32px 64px -32px;
+$dark-shadow-gradient-active: hsl(220, 13%, 18%, 0.08) 0px 24px 48px -4px,
+  hsl(220, 13%, 18%, 0.04) 0px 16px 32px -16px;
+
+// Framework Fonts Import
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&display=swap");
+
+// Framework Fonts
+$sans-serif: "Noto Sans", sans-serif;
+
+// Framework Font Weights
+$sans-serif-regular: 400;
+$sans-serif-medium: 500;
+$sans-serif-bold: 700;
+$sans-serif-black: 900;

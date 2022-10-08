@@ -1,0 +1,206 @@
+//// Content
+%content {
+  position: relative;
+  z-index: 100;
+  .react-graphql-portfolio-angle-solid {
+    z-index: -1000;
+    position: absolute;
+    display: block;
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0 auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+}
+
+// Angle Pages
+.home {
+  .react-graphql-portfolio-angle-solid {
+    width: 144vw;
+  }
+}
+.about {
+  .react-graphql-portfolio-angle-solid {
+    width: 192vw;
+  }
+}
+
+// Content Large
+.content-large {
+  @extend %content;
+  padding: 0 80px;
+  margin: 40px auto;
+  .col-md-12 {
+    h2,
+    h4 {
+      max-width: 50%;
+    }
+  }
+  .flex-box-start {
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+// Content Side By Image & Content Icons By Image
+.content-side-by-image,
+.content-icons-by-image {
+  h2 {
+    color: $light;
+  }
+  h4,
+  h6 {
+    color: $secondary;
+  }
+  p {
+    color: $light;
+  }
+  .button-filled {
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:active,
+    &.active {
+      color: $primary;
+      border-color: $light;
+      background-color: $light;
+      box-shadow: $light-shadow-solid;
+    }
+  }
+}
+
+// Content Side By Image & Content Icons By Image
+.content-side-by-image,
+.content-icons-by-image {
+  @extend %content;
+  padding: 0 80px;
+  margin: 80px auto;
+
+  .content-side-by-image-grid,
+  .content-icons-by-image-grid {
+    padding: 16px 0;
+    .col-md-6 {
+      margin: 8px 0;
+      img,
+      svg {
+        padding: 0;
+        margin: 0 0 16px 0;
+        border-radius: 8px;
+      }
+      button {
+        margin: 16px 0;
+      }
+    }
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: 1600px) {
+  %content {
+    .react-graphql-portfolio-angle-solid {
+      width: 192vw;
+      top: 40%;
+    }
+  }
+  .content-large,
+  .content-side-by-image,
+  .content-icons-by-image {
+    padding: 0 40px;
+    margin: 120px auto;
+  }
+  .about {
+    .react-graphql-portfolio-angle-solid {
+      width: 256vw;
+      top: 40%;
+    }
+  }
+}
+@media only screen and (max-width: 1400px) {
+  %content {
+    .react-graphql-portfolio-angle-solid {
+      width: 256vw;
+    }
+  }
+  .about {
+    .react-graphql-portfolio-angle-solid {
+      width: 320vw;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  %content {
+    .react-graphql-portfolio-angle-solid {
+      width: 320vw;
+    }
+  }
+  .about {
+    .react-graphql-portfolio-angle-solid {
+      width: 384vw;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  %content {
+    .react-graphql-portfolio-angle-solid {
+      width: 384vw;
+    }
+  }
+  .about {
+    .react-graphql-portfolio-angle-solid {
+      width: 512vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  %content {
+    .react-graphql-portfolio-angle-solid {
+      width: 512vw;
+    }
+    .col-md-12 {
+      h2,
+      h4 {
+        max-width: none;
+      }
+    }
+  }
+  .about {
+    .react-graphql-portfolio-angle-solid {
+      width: 768vw;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  %content {
+    .react-graphql-portfolio-angle-solid {
+      width: 768vw;
+    }
+  }
+  .about {
+    .react-graphql-portfolio-angle-solid {
+      width: 1216vw;
+    }
+  }
+  .content-large,
+  .content-side-by-image,
+  .content-icons-by-image {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  %content {
+    .react-graphql-portfolio-angle-solid {
+      width: 1216vw;
+    }
+  }
+  .about {
+    .react-graphql-portfolio-angle-solid {
+      width: 1664vw;
+    }
+  }
+}

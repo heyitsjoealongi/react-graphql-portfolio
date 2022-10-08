@@ -1,0 +1,115 @@
+//// Admin
+%admin {
+  position: relative;
+  z-index: 1000;
+}
+
+// No Match
+.no-matching-route {
+  @extend %admin;
+  padding: 0 80px;
+  margin: 144px auto;
+  max-width: 104vh;
+  text-align: center;
+}
+
+// Loading Spinner
+.spinner {
+  position: relative;
+  z-index: 400;
+  padding: 240px 0;
+  margin: 0 auto;
+  .text-primary {
+    height: 64px;
+    width: 64px;
+    color: $secondary !important;
+  }
+}
+
+// No Content
+.no-content {
+  position: relative;
+  z-index: 400;
+  padding: 0 80px;
+  margin: 248px auto;
+  text-align: center;
+}
+
+// Call To Action
+.call-to-action {
+  padding: 40px 0;
+  margin: 0 20px;
+  text-align: center;
+}
+
+// Privacy Policy
+.privacy-policy {
+  position: relative;
+  z-index: 400;
+  padding: 0 80px;
+  margin: 40px auto;
+}
+
+// Alert
+.alert {
+  z-index: 1800;
+  position: fixed;
+  display: block;
+  width: 80%;
+  height: auto;
+  padding: 32px;
+  text-align: center;
+  top: 96px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: $light;
+  font-family: $sans-serif;
+  font-weight: $sans-serif-regular;
+  background-color: $primary;
+  box-shadow: $primary-shadow-solid;
+  border-color: transparent;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 8px;
+  .btn-close {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    color: $light !important;
+    padding: 16px;
+    border-radius: 8px !important;
+    background-color: $light;
+    opacity: 1;
+    box-shadow: none !important;
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:active,
+    &.active {
+      background-color: $secondary;
+    }
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: 1600px) {
+  .privacy-policy {
+    padding: 0 40px;
+    margin: 20px auto;
+  }
+  .no-content {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .privacy-policy {
+    padding: 0 16px;
+    margin: 16px auto;
+  }
+  .no-content {
+    padding: 0 16px;
+  }
+}

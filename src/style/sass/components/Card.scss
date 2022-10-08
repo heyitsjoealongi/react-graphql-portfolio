@@ -1,0 +1,250 @@
+//// Card
+%card {
+  position: relative;
+  z-index: 1600;
+  .card {
+    z-index: -300;
+    padding: 0 80px;
+    margin: 40px auto;
+    background-color: $light;
+    text-align: left;
+    border-color: transparent;
+    border-width: 0;
+    border-style: none;
+    border-radius: 8px;
+    transition-property: all;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:active,
+    &.active {
+      z-index: 100;
+      border-color: $primary;
+    }
+  }
+  a {
+    .card {
+      z-index: -300;
+      padding: 16px;
+      margin: 8px;
+      background-color: $light;
+      text-align: left;
+      border-radius: 8px;
+      transition-property: all;
+      transition-delay: 0.1s;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
+      .card-image {
+        padding: 16px;
+        margin: 0;
+      }
+      .card-body {
+        padding: 16px;
+        margin: 0;
+      }
+    }
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:active,
+    &.active {
+      .card {
+        z-index: 100;
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+// Card List
+.card-list {
+  @extend %card;
+  padding: 0 80px;
+  margin: 40px auto;
+  .card-list-intro {
+    margin: 0 0 40px 0;
+  }
+  .card-list-cards {
+    padding: 0;
+    margin: 40px auto;
+    a {
+      .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        border-color: $primary-soft;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 8px;
+        h4,
+        h6,
+        p {
+          color: $primary;
+        }
+        p {
+          font-size: 14px;
+        }
+        .card-image,
+        .card-body {
+          order: 0;
+          flex: 0 1 auto;
+          align-self: center;
+        }
+        .card-image {
+          max-width: calc(20% - 8px);
+          height: 80px;
+          width: 80px;
+          padding: 80px;
+          margin: 20px;
+          background-color: $alternate-soft;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          border-radius: 8px;
+        }
+        .card-body {
+          width: calc(80% - 8px);
+        }
+      }
+      &:hover,
+      &:focus,
+      &:focus-within,
+      &:focus-visible,
+      &:active,
+      &.active {
+        h4,
+        h6,
+        p {
+          color: $light;
+        }
+        .card {
+          border-color: $secondary;
+          background-color: $secondary;
+          box-shadow: $secondary-shadow-gradient;
+          .card-image {
+            background-color: $primary-soft;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Card Grid
+.card-grid {
+  @extend %card;
+  padding: 0 80px;
+  margin: 40px auto;
+  .card-grid-intro {
+    margin: 0 0 40px 0;
+  }
+  .card-grid-cards {
+    padding: 0;
+    margin: 40px auto;
+    .flex-box-start-stretch {
+      width: calc(33.33% - 24px);
+      a {
+        .card {
+          height: 100%;
+          min-height: 24vh;
+          margin: 0;
+          border-color: $primary-soft;
+          border-width: 2px;
+          border-style: solid;
+          border-radius: 8px;
+          h4 {
+            color: $primary;
+          }
+          .card-subtitle {
+            color: $secondary;
+          }
+        }
+        &:hover,
+        &:focus,
+        &:focus-within,
+        &:focus-visible,
+        &:active,
+        &.active {
+          h4 {
+            color: $light;
+          }
+          .card {
+            background-color: $primary;
+            box-shadow: $primary-shadow-gradient;
+          }
+          transition-property: all;
+          transition-delay: 8s ease-in-out;
+          transition-duration: 16s ease-in-out;
+          transition-timing-function: linear;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: 1600px) {
+  .card,
+  .card-list,
+  .card-grid {
+    padding: 0 40px;
+    margin: 40px auto;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .card-list {
+    .card-list-cards {
+      a {
+        .card {
+          .card-image {
+            height: 40px;
+            width: 40px;
+            padding: 40px;
+          }
+        }
+      }
+    }
+  }
+  .card-grid {
+    .card-grid-cards {
+      .flex-box-start-stretch {
+        width: calc(50% - 24px);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .card-grid {
+    .card-grid-cards {
+      .flex-box-start-stretch {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card,
+  .card-list,
+  .card-grid {
+    padding: 0 16px;
+  }
+  .card-list {
+    .card-list-cards {
+      a {
+        .card {
+          .card-body {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

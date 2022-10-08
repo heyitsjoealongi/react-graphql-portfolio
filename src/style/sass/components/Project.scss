@@ -1,0 +1,200 @@
+//// Project
+%project {
+  position: relative;
+  z-index: 1600;
+}
+
+// Project List
+.project-list {
+  @extend %project;
+  padding: 0 80px;
+  margin: 80px auto;
+  a {
+    .project-title {
+      padding: 24px;
+      margin: 0 auto;
+      background-color: $secondary;
+      border-radius: 8px 8px 0 0;
+      h4 {
+        color: $light;
+        text-align: left;
+        margin: 0;
+      }
+    }
+    .project-snippet {
+      padding: 0;
+      margin: 0 0 24px 0;
+      background-color: $light;
+      border-radius: 0 0 8px 8px;
+      box-shadow: $primary-shadow-gradient;
+      overflow: hidden;
+      .project-content {
+        visibility: hidden;
+        opacity: 0;
+        padding: 24px;
+        margin: 0 auto;
+        text-align: left;
+        background-color: hsl(220, 13%, 18%, 0.8);
+        transition-property: all !important;
+        transition-delay: 0.1s !important;
+        transition-duration: 0.2s !important;
+        transition-timing-function: linear !important;
+        p {
+          color: $light;
+        }
+        .button-group {
+          padding: 0;
+          margin: 0;
+          .button-filled {
+            background-color: $secondary;
+            border-color: transparent;
+            box-shadow: 0 24px 18px -18px $secondary-shadow;
+          }
+        }
+      }
+    }
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:active,
+    &.active {
+      .project-snippet {
+        border-color: $secondary;
+        box-shadow: $secondary-shadow-gradient-active;
+        .project-content {
+          visibility: visible;
+          opacity: 1;
+          background-color: $secondary;
+          h4 {
+            color: $primary;
+          }
+          p {
+            color: $light;
+          }
+          .button-group {
+            .button-filled {
+              background-color: $primary;
+              box-shadow: 0 24px 18px -18px $primary-shadow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Project Article
+.project-article {
+  @extend %project;
+  overflow: visible;
+  padding: 0 80px;
+  margin: 40px auto;
+  .project-hero {
+    width: 64vw;
+    padding: 0 0 40px 0;
+    margin: 0 auto;
+    img {
+      border-radius: 8px;
+      box-shadow: 0 24px 18px -18px $primary-shadow;
+    }
+  }
+  .project-subhero {
+    width: 48vw;
+    padding: 0;
+    margin: 0 auto;
+    .project-title {
+      color: $secondary;
+      margin: 0;
+    }
+  }
+  .project-content {
+    width: 48vw;
+    padding: 20px 0;
+    margin: 0 auto;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      padding: 0;
+      margin: 64px auto 24px auto;
+      font-size: 32px;
+      color: $dark;
+      font-weight: $sans-serif-medium;
+      text-transform: none;
+    }
+    p,
+    li {
+      color: $dark;
+    }
+    p,
+    a,
+    li {
+      font-size: 18px;
+    }
+    b,
+    strong {
+      display: block;
+      padding: 0;
+      margin: 32px auto 8px auto;
+      font-size: 18px;
+      color: $dark;
+    }
+    pre {
+      padding: 32px;
+      margin: 40px auto;
+      font-size: 14px;
+      color: $primary;
+      background-color: $primary-soft;
+      border-color: $primary-soft;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 8px;
+    }
+    img {
+      background-color: $light;
+      border-radius: 8px;
+      box-shadow: 0px 4px 12px $primary-shadow;
+    }
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: 1600px) {
+  .project-list,
+  .project-article {
+    padding: 0 40px;
+    margin: 40px auto;
+  }
+  .project-article {
+    .project-hero,
+    .project-subhero,
+    .project-content {
+      width: 60%;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .project-article {
+    .project-hero,
+    .project-subhero,
+    .project-content {
+      width: 80%;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project-list,
+  .project-article {
+    padding: 0 16px;
+  }
+  .project-article {
+    .project-hero,
+    .project-subhero,
+    .project-content {
+      width: 100%;
+    }
+  }
+}

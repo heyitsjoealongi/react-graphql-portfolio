@@ -1,0 +1,219 @@
+//// Typography
+// Font
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span {
+  font-size: 24px;
+  font-family: $sans-serif;
+  font-style: normal;
+  font-display: auto;
+  font-smooth: auto;
+  line-height: auto;
+}
+h1 {
+  font-size: 48px;
+  color: $primary;
+  font-family: $sans-serif;
+  font-weight: $sans-serif-black;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+h2 {
+  font-size: 32px;
+  color: $primary;
+  font-family: $sans-serif;
+  font-weight: $sans-serif-bold;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+h3,
+h4 {
+  font-size: 24px;
+  letter-spacing: 0.8px;
+  color: $secondary;
+  font-family: $sans-serif;
+  font-weight: $sans-serif-medium;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+h5,
+h6 {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  color: $secondary;
+  font-family: $sans-serif;
+  font-weight: $sans-serif-medium;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+p {
+  font-size: 18px;
+  color: $dark;
+  font-family: $sans-serif;
+  font-weight: $sans-serif-regular;
+  padding: 0;
+  margin: 0 0 18px 0;
+  .lead {
+    font-size: 24px;
+    margin: 0 0 24px 0;
+  }
+  a {
+    color: $secondary;
+    font-size: 18px;
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:active,
+    &.active {
+      color: $alternate;
+    }
+  }
+}
+
+// Link
+a {
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  color: $dark;
+  font-family: $sans-serif;
+  font-weight: $sans-serif-medium;
+  text-align: center;
+  text-decoration: none;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  text-decoration: none !important;
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:focus-visible,
+  &:active,
+  &.active {
+    color: $secondary;
+  }
+}
+
+// Button
+.button-filled,
+.button-call-to-action,
+.button-outline,
+.button-outline-alt {
+  font-family: $sans-serif;
+  font-weight: $sans-serif-medium;
+  padding: 8px 40px;
+  margin: 24px 16px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 24px;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.button-filled {
+  color: $light;
+  background-color: $secondary;
+  border-color: $secondary;
+  box-shadow: $secondary-shadow-solid;
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:focus-visible,
+  &:active,
+  &.active {
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: $primary-shadow-solid;
+  }
+}
+.button-outline {
+  color: $primary;
+  background-color: transparent;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:focus-visible,
+  &:active,
+  &.active {
+    color: $secondary;
+    background-color: transparent;
+    border-color: $secondary;
+    box-shadow: none;
+  }
+}
+.button-outline-alt {
+  color: $secondary;
+  background-color: transparent;
+  border-color: $secondary;
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:focus-visible,
+  &:active,
+  &.active {
+    color: $light;
+    background-color: transparent;
+    border-color: $light;
+    box-shadow: none;
+  }
+}
+.button-call-to-action {
+  color: $light;
+  background-color: $alternate;
+  border-color: transparent;
+  box-shadow: $alternate-shadow-solid;
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:focus-visible,
+  &:active,
+  &.active {
+    background-color: $primary;
+    border-color: transparent;
+    box-shadow: $primary-shadow-solid;
+  }
+}
+.button-group {
+  margin: 8px 0 24px 0;
+
+  .button-filled,
+  .button-call-to-action {
+    margin: 24px 8px 24px 0 !important;
+  }
+
+  .button-outline,
+  .button-outline-alt {
+    margin: 24px 0 24px 8px !important;
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: 600px) {
+  .button-filled,
+  .button-call-to-action,
+  .button-outline,
+  .button-outline-alt {
+    width: 100%;
+    margin: 24px auto 0 auto !important;
+  }
+  .button-group {
+    .button-filled,
+    .button-call-to-action,
+    .button-outline,
+    .button-outline-alt {
+      width: 100%;
+      margin: 24px auto 0 auto !important;
+    }
+  }
+}

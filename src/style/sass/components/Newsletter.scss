@@ -1,0 +1,123 @@
+//// Newsletter
+%newsletter {
+  position: relative;
+  z-index: 3200;
+}
+
+// Navbar
+.newsletter-large {
+  @extend %newsletter;
+  padding: 80px;
+  margin: 80px auto;
+  max-width: 48vw;
+  border-radius: 12px;
+  background: rgb(66, 70, 78);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 44, 52, 1) 0%,
+    rgba(97, 218, 251, 1) 100%
+  );
+  box-shadow: $secondary-shadow-gradient;
+  text-align: center;
+  h4 {
+    color: $light;
+  }
+  input {
+    color: $light;
+    border-color: $light;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 24px;
+    background-color: transparent;
+    &::placeholder {
+      color: $light;
+    }
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:active,
+    &.active {
+      color: $light;
+      background-color: transparent !important;
+      border-color: $light;
+      box-shadow: $primary-shadow-solid;
+    }
+  }
+  button {
+    padding: 8px 40px;
+    margin: 0;
+    color: $primary;
+    font-family: $sans-serif;
+    font-weight: $sans-serif-medium;
+    background-color: $light;
+    box-shadow: $light-shadow-solid;
+    border-color: transparent;
+    border-width: 0;
+    border-style: solid;
+    border-radius: 0 24px 24px 0 !important;
+    transition-property: all;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    a {
+      color: $light;
+    }
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible,
+    &:active,
+    &.active {
+      color: $light;
+      background-color: $primary;
+      border-color: $primary;
+      box-shadow: $primary-shadow-solid;
+    }
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: 1200px) {
+  .newsletter-large {
+    padding: 80px 40px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .newsletter-large {
+    padding: 80px 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .newsletter-large {
+    max-width: 64vw;
+    .input-group {
+      padding: 0;
+      margin: 0;
+      input {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 24px !important;
+        border-color: $light;
+      }
+      button {
+        width: 100%;
+        margin: 24px auto;
+        border-radius: 24px !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .newsletter-large {
+    max-width: 72vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .newsletter-large {
+    max-width: 80vw;
+  }
+}

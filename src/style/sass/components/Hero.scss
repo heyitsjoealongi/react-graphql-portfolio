@@ -1,0 +1,179 @@
+//// Hero
+%hero {
+  position: relative;
+  z-index: 400;
+  .react-graphql-portfolio-angle-gradient {
+    z-index: -1000;
+    position: absolute;
+    display: block;
+    height: auto;
+    width: 144vw;
+    padding: 0;
+    margin: 0 auto;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Hero Large
+.hero-large {
+  @extend %hero;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0 80px;
+  margin: 40px auto;
+  .col-md-6 {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+  }
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 600px;
+    width: 1600px;
+    padding: 0;
+    margin: 0 auto;
+    top: 50%;
+    right: -1600px;
+    transform: translate(-50%, -50%);
+    background-color: $primary;
+    background-image: url("/src/assets/img/logo.svg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    border-radius: 24px;
+    z-index: -100;
+  }
+  .img-fluid {
+    margin: 0 auto;
+  }
+}
+
+// Hero Small
+.hero-small {
+  @extend %hero;
+  padding: 0 80px;
+  margin: 40px auto;
+  .hero-image {
+    height: 80vh;
+    width: 100%;
+    padding: 0 80px;
+    margin: 80px auto 20px auto;
+    background-color: $secondary;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: $secondary-shadow-gradient;
+  }
+  svg {
+    display: block;
+    padding: 0;
+    margin: 80px auto auto auto;
+    text-align: center;
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: 1600px) {
+  %hero {
+    .react-graphql-portfolio-angle-gradient {
+      width: 192vw;
+      top: 16%;
+    }
+  }
+  .hero-large {
+    &:before {
+      right: -1800px;
+    }
+  }
+  .hero-large,
+  .hero-small {
+    padding: 0 40px;
+    margin: 40px auto;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  %hero {
+    .react-graphql-portfolio-angle-gradient {
+      width: 256vw;
+    }
+  }
+  .hero-large {
+    &:before {
+      right: -2000px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  %hero {
+    .react-graphql-portfolio-angle-gradient {
+      width: 320vw;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  %hero {
+    .react-graphql-portfolio-angle-gradient {
+      width: 384vw;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  %hero {
+    .react-graphql-portfolio-angle-gradient {
+      width: 512vw;
+    }
+  }
+  .hero-large {
+    &:before {
+      height: 400px;
+      width: 1600px;
+      top: 800px;
+      right: -1000px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  %hero {
+    .react-graphql-portfolio-angle-gradient {
+      width: 768vw;
+    }
+  }
+  .hero-large,
+  .hero-small {
+    padding: 0 16px;
+  }
+  .hero-large {
+    &:before {
+      height: 200px;
+      top: 1000px;
+    }
+  }
+  .hero-small {
+    .hero-image {
+      margin: 80px auto 0 auto;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  %hero {
+    .react-graphql-portfolio-angle-gradient {
+      width: 1216vw;
+    }
+  }
+  .hero-large {
+    &:before {
+      height: 160px;
+      top: 904px;
+    }
+  }
+}

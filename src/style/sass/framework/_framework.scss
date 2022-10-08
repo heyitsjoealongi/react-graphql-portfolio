@@ -1,0 +1,119 @@
+//// Framework
+// Border Box
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Application
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  appearance: none;
+  color: $primary;
+  background-color: $light;
+}
+
+// Rendering
+main {
+  display: block;
+  position: relative;
+  z-index: 100;
+  height: auto;
+  width: 100%;
+  max-width: 1800px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+// Flex Containers & Boxes
+.flex-box-container-start {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+  .flex-box-start {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-start;
+  }
+}
+.flex-box-container-start-stretch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+  .flex-box-start-stretch {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: stretch;
+  }
+}
+.flex-box-container-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 40px;
+  .flex-box-center {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+  }
+}
+.flex-box-container-space-between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  .flex-box-space-between {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+  }
+}
+
+// Images
+img {
+  height: auto;
+  max-width: 100%;
+}
+.img-shadow {
+  box-shadow: $primary-shadow-gradient;
+}
+
+// Hidden
+.visually-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+// Media Queries
+@media only screen and (min-width: 1800px) {
+  main {
+    overflow: hidden;
+  }
+}
