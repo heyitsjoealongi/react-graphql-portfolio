@@ -6,8 +6,6 @@
 
 React GraphQL Portfolio for building application development & blogging portfolios in React.js with Bootstrap utilizing [Next.js](https://vercel.com/) (Vercel) for simplified deployment with [Create React App](https://create-react-app.dev/) & [Node.js](https://nodejs.org/en/) configuration available by [Open Source](https://opensource.org/).
 
-**[View Demo](https://react-graphql-portfolio.vercel.app/)**
-
 ## Contents
 
 - [About](#about)
