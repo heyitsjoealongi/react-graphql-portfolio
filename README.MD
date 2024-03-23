@@ -1,8 +1,8 @@
-![React GraphQL Portfolio Banner](https://raw.githubusercontent.com/collectedview/react-graphql-portfolio/master/public/react-graphql-portfolio.png)
+![React GraphQL Portfolio Banner](https://raw.githubusercontent.com/heyitsjoealongi/react-graphql-portfolio/master/public/react-graphql-portfolio.png)
 
 # React GraphQL Portfolio
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) [![License: MIT ](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collectedview/react-graphql-portfolio/blob/master/LICENSE)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) [![License: MIT ](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/heyitsjoealongi/react-graphql-portfolio/blob/master/LICENSE)
 
 React GraphQL Portfolio for building application development & blogging portfolios in React.js with Bootstrap utilizing [Next.js](https://vercel.com/) (Vercel) for simplified deployment with [Create React App](https://create-react-app.dev/) & [Node.js](https://nodejs.org/en/) configuration available by [Open Source](https://opensource.org/).
 
@@ -19,12 +19,12 @@ React GraphQL Portfolio for building application development & blogging portfoli
 
 React GraphQL Portfolio is a template for React & GraphQL utilizing frameworks for quickly iterating and developing applications with Bootstrap and JSX.
 
-![GitHub stars](https://img.shields.io/github/stars/collectedview/react-graphql-portfolio?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/collectedview?label=Follow&style=social)
+![GitHub stars](https://img.shields.io/github/stars/heyitsjoealongi/react-graphql-portfolio?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/heyitsjoealongi?label=Follow&style=social)
 
-- Website: [collectedview.io](https://collectedview.io)
-- Twitter: [@collectedview](https://twitter.com/collectedview)
-- GitHub: [@collectedview](https://github.com/collectedview)
-- LinkedIn: [@collectedview](https://www.linkedin.com/in/collectedview)
+- Website: [heyitsjoealongi.com](https://heyitsjoealongi.com/)
+- Twitter: [@heyitsjoealongi](https://twitter.com/heyitsjoealongi/)
+- GitHub: [@heyitsjoealongi](https://github.com/heyitsjoealongi/)
+- LinkedIn: [@heyitsjoealongi](https://www.linkedin.com/in/heyitsjoealongi/)
 
 ## Build
 
@@ -53,14 +53,14 @@ This project runs on Node.js while the DOM UI elements are established using Rea
 
 ### Installation
 
-- **Option 1.)** [Download the latest version of this template from GitHub](https://github.com/collectedview/react-graphql-portfolio/archive/master.zip)
+- **Option 1.)** [Download the latest version of this template from GitHub](https://github.com/heyitsjoealongi/react-graphql-portfolio/archive/master.zip)
 - **Option 2.)** Clone this repository
 
 ```
-                  git clone https://github.com/collectedview/react-graphql-portfolio.git
+                  git clone https://github.com/heyitsjoealongi/react-graphql-portfolio.git
 ```
 
-- **Option 3.)** [Fork, Clone, or Download via GitHub Desktop](x-github-client://openRepo/https://github.com/collectedview/react-graphql-portfolio)
+- **Option 3.)** [Fork, Clone, or Download via GitHub Desktop](x-github-client://openRepo/https://github.com/heyitsjoealongi/react-graphql-portfolio)
 
 ### Basic Usage
 
@@ -92,11 +92,11 @@ yarn upgrade-interactive --latest
 
 Create a [Vercel](https://vercel.com/) account, choose a project name, and connect a GitHub, GitLab, or BitBucket account to push to the master branch of the repository. Quickly deploy with a cloned version of the reposity.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/collectedview/react-graphql-portfolio.git)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/heyitsjoealongi/react-graphql-portfolio.git)
 
 ##### Option 1: Deploy from Repository
 
-[Clone Repo](x-github-client://openRepo/https://github.com/collectedview/react-graphql-portfolio)
+[Clone Repo](x-github-client://openRepo/https://github.com/heyitsjoealongi/react-graphql-portfolio)
 
 ##### Option 2: Deploy from Git
 
@@ -114,7 +114,7 @@ Built with [Create React App](https://create-react-app.dev/) means the freedom o
 
 ##### Bugs and Issues
 
-Having an issue with the template? Report bugs & issues with React GraphQL Portfolio on GitHub via [Issues](https://github.com/collectedview/react-graphql-portfolio/issues). Fork, Pull, or Send an email over to join as a contributor! Join in on the open source conversation on [Twitter](https://twitter.com/collectedview).
+Having an issue with the template? Report bugs & issues with React GraphQL Portfolio on GitHub via [Issues](https://github.com/heyitsjoealongi/react-graphql-portfolio/issues). Fork, Pull, or Send an email over to join as a contributor! Join in on the open source conversation on [Twitter](https://twitter.com/heyitsjoealongi).
 
 ##### Acknowledgments
 
@@ -130,4 +130,4 @@ Having an issue with the template? Report bugs & issues with React GraphQL Portf
 
 ##### License
 
-© 2022 React GraphQL Portfolio released via [MIT](https://opensource.org/licenses/MIT) license. Information on this license can be viewed as it applies to this repository on GitHub at [React GraphQL Portfolio License](https://github.com/collectedview/react-graphql-portfolio/blob/master/LICENSE).
+© 2022 React GraphQL Portfolio released via [MIT](https://opensource.org/licenses/MIT) license. Information on this license can be viewed as it applies to this repository on GitHub at [React GraphQL Portfolio License](https://github.com/heyitsjoealongi/react-graphql-portfolio/blob/master/LICENSE).
